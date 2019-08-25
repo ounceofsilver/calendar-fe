@@ -1,0 +1,344 @@
+$white: #FFFFFF;
+$medium-purple: #7A5F7F;
+$light-purple: #F4BDFF;
+$dark-purple: #3D2F40;
+$purple-70: rgba($medium-purple, .7);
+$background: #FCEFFF;
+$primary-font: 'Fredoka One';
+$secondary-font: 'Lato';
+$box-shadow: 3px 3px 6px rgba(200,200,200,.5);
+
+body {
+	background-color: $background;
+	padding: 0px;
+	margin: 0px;
+}
+
+// nav
+
+nav {
+	font-family: $primary-font;
+	padding: 20px 80px;
+	a {
+		text-decoration: none;
+	}
+	.brand {
+		font-size: 22px;
+		color: $medium-purple;
+	}
+	.nav-link {
+		font-size: 16px;
+		color: $purple-70;
+		margin: 0px 40px;
+	}
+	.login {
+		background-color: $purple-70;
+		color: $dark-purple;
+		box-sizing: border-box;
+		min-width: 100px;
+		max-width: fit-content;
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 30px;
+		text-align: center;
+		margin: 0px 20px;
+	}
+	.user {
+		color: $purple-70;
+		font-size: 30px;
+		padding: 0px;
+		margin: 0px;
+		line-height: 30px;
+		vertical-align: bottom;
+	}
+	.nav-link:hover, .user:hover {
+		color: $medium-purple;
+		transition: .4s all;
+	}
+	.login:hover {
+		background-color: $medium-purple;
+		transition: .4s background;
+	}
+	.nav-right {
+		float: right;
+	}
+}
+
+// headings
+h1 {
+	font-family: $primary-font;
+	color: $dark-purple;
+	font-size: 70px;
+	font-weight: 100;
+}
+h2 {
+	font-family: $primary-font;
+	color: $medium-purple;
+	font-size: 40px;
+	font-weight: 100;
+}
+h3 {
+	font-family: $primary-font;
+	color: $medium-purple;
+	
+	font-size: 28px;
+	font-weight: 100;
+}
+h3.white {
+	color: $white;
+}
+h5 {
+	font-size: 22px;
+	color: $dark-purple;
+	font-family: $primary-font;
+	font-weight: 100;
+	line-height: 1.0;
+	margin-bottom: 0px;
+}
+h6 {
+	font-family: $secondary-font;
+	color: $medium-purple;
+	font-weight: 300;
+	font-size: 16px;
+	font-style: italic;
+	a {
+		text-decoration: underline;
+		text-decoration-color: $medium-purple;
+		color: inherit;
+	}
+}
+p {
+	font-family: $secondary-font;
+	color: $dark-purple;
+	font-weight: 300;
+}
+a.link {
+	text-decoration: underline;
+}
+// symbols
+.button {
+	font-family: $primary-font;
+	color: $light-purple;
+	text-decoration: none;
+	text-align: center;
+	background-color: $medium-purple;
+	display: inline-block;
+	box-sizing: border-box;
+	min-width: 200px;
+	max-width: fit-content;
+	padding: 0px 20px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 40px;
+	font-size: 18px;
+	font-weight: 100;
+
+}
+a {
+	text-decoration: none;
+}
+span.caret {
+	font-size: 40px;
+	color: $medium-purple;
+	display: block;
+	text-decoration: none;
+}
+
+// layout
+#landing {
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	.caret {
+		margin-top: 30%;		
+	}
+}
+#about {
+	display: block;
+	margin: 100px;
+	.left {
+		width: 65%;
+		float: left;
+	}
+	.right {
+		width: 35%;
+		float: right;
+		padding: 100px 0px;
+		h6 {
+			margin: 10px;
+		}
+		text-align: center;
+	}
+	margin-bottom: 200px;
+
+}
+#pricing-header {
+	box-sizing: border-box;
+	margin-top: 200px;
+	text-align: center;
+	background-color: $purple-70;
+	padding: 60px;
+	h2 {
+		color: $white;
+		padding: 0px;
+		margin: 0px;
+		line-height: 1.0;
+	}
+}
+#pricing {
+	padding: 60px;
+	.plan {
+		display: inline-block;
+		background-color: $white;
+		box-sizing: border-box;
+		width: 24%;
+		margin: 0 4.5%;
+		padding: 40px;
+		border-radius: 20px;
+		box-shadow: $box-shadow;
+		h3 {
+			color: $dark-purple;
+			text-align: center;
+			margin-top: 0px;
+			
+		}
+		h3:nth-of-type(2) {
+			margin-top: 40px;
+			font-size: 18px;
+			.price {
+				font-size: 50px;
+			}
+			
+		}
+		li {
+			text-align: left;
+		}
+		a.button {
+			display: block;
+		}
+	}
+}
+#subscribe {
+	background-color: $purple-70;
+	text-align: center;
+	padding: 40px;
+	h3 {
+		color: $white;
+		margin: 0px;
+		line-height: 1.0;
+	}
+	h4 {
+		font-family: $secondary-font;
+		color: $light-purple;
+	}
+	form input[type="email"] {
+		background-color: $white;
+		box-sizing: border-box;
+		border: transparent;
+		border-radius: 20px;
+		height: 40px;
+		line-height: 40px;
+		width: 250px;
+		padding: 0px 15px;
+
+		font-family: $secondary-font;
+		color: $dark-purple;
+		font-weight: 500;
+		font-size: 16px;
+		font-style: italic;
+	}
+	form input[type="submit"] {
+		background-color: $medium-purple;
+		box-sizing: border-box;
+		height: 40px;
+		margin: 0px;
+		width: 160px;
+		border: transparent;
+		border-radius: 20px;
+		font-family: $primary-font;
+		color: $light-purple;
+		font-size: 18px;
+		font-weight: 100;
+
+	}
+}
+
+// footer
+footer {
+	padding: 20px 40px 40px 40px;
+
+	a {
+		color: inherit;
+	}
+	h1 {
+		font-size: 16px;
+		margin: 0px;
+		font-weight: 100;
+	}
+	h2{
+		font-size: 14px;
+		font-weight: 100;
+	}
+	.left {
+		width: 70%;
+		float: left;
+	}
+	.right {
+		width: 30%;
+		float: right;
+	}
+}
+
+// pricing
+
+
+#pricing-large {
+	h1 {
+		text-align: center;
+	}
+	padding: 60px;
+	.plan {
+		display: inline-block;
+		background-color: $white;
+		box-sizing: border-box;
+		width: 26%;
+		margin: 0 3.5%;
+		padding: 40px;
+		border-radius: 20px;
+		box-shadow: $box-shadow;
+		h3 {
+			color: $dark-purple;
+			text-align: center;
+			margin-top: 0px;
+			font-size: 40px;
+		}
+		h3:nth-of-type(2) {
+			margin-top: 40px;
+			font-size: 18px;
+			.price {
+				font-size: 70px;
+			}
+			
+		}
+		li {
+			text-align: left;
+		}
+		a.button {
+			display: block;
+		}
+	}
+}
+#faq {
+	padding: 80px;
+	p {
+		font-weight: 500;
+		margin-left: 20px;
+	}
+}
+
+// settings
+.hidden {
+	display: none;
+}

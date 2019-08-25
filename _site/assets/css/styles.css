@@ -1,0 +1,119 @@
+body { background-color: #FCEFFF; padding: 0px; margin: 0px; }
+
+nav { font-family: "Fredoka One"; padding: 20px 80px; }
+
+nav a { text-decoration: none; }
+
+nav .brand { font-size: 22px; color: #7A5F7F; }
+
+nav .nav-link { font-size: 16px; color: rgba(122, 95, 127, 0.7); margin: 0px 40px; }
+
+nav .login { background-color: rgba(122, 95, 127, 0.7); color: #3D2F40; box-sizing: border-box; min-width: 100px; max-width: fit-content; display: inline-block; height: 30px; line-height: 30px; border-radius: 30px; text-align: center; margin: 0px 20px; }
+
+nav .user { color: rgba(122, 95, 127, 0.7); font-size: 30px; padding: 0px; margin: 0px; line-height: 30px; vertical-align: bottom; }
+
+nav .nav-link:hover, nav .user:hover { color: #7A5F7F; transition: .4s all; }
+
+nav .login:hover { background-color: #7A5F7F; transition: .4s background; }
+
+nav .nav-right { float: right; }
+
+h1 { font-family: "Fredoka One"; color: #3D2F40; font-size: 70px; font-weight: 100; }
+
+h2 { font-family: "Fredoka One"; color: #7A5F7F; font-size: 40px; font-weight: 100; }
+
+h3 { font-family: "Fredoka One"; color: #7A5F7F; font-size: 28px; font-weight: 100; }
+
+h3.white { color: #FFFFFF; }
+
+h5 { font-size: 22px; color: #3D2F40; font-family: "Fredoka One"; font-weight: 100; line-height: 1.0; margin-bottom: 0px; }
+
+h6 { font-family: "Lato"; color: #7A5F7F; font-weight: 300; font-size: 16px; font-style: italic; }
+
+h6 a { text-decoration: underline; text-decoration-color: #7A5F7F; color: inherit; }
+
+p { font-family: "Lato"; color: #3D2F40; font-weight: 300; }
+
+a.link { text-decoration: underline; }
+
+.button { font-family: "Fredoka One"; color: #F4BDFF; text-decoration: none; text-align: center; background-color: #7A5F7F; display: inline-block; box-sizing: border-box; min-width: 200px; max-width: fit-content; padding: 0px 20px; height: 40px; line-height: 40px; border-radius: 40px; font-size: 18px; font-weight: 100; }
+
+a { text-decoration: none; }
+
+span.caret { font-size: 40px; color: #7A5F7F; display: block; text-decoration: none; }
+
+#landing { width: 550px; margin: 0 auto; margin-top: 100px; text-align: center; }
+
+#landing .caret { margin-top: 30%; }
+
+#about { display: block; margin: 100px; margin-bottom: 200px; }
+
+#about .left { width: 65%; float: left; }
+
+#about .right { width: 35%; float: right; padding: 100px 0px; text-align: center; }
+
+#about .right h6 { margin: 10px; }
+
+#pricing-header { box-sizing: border-box; margin-top: 200px; text-align: center; background-color: rgba(122, 95, 127, 0.7); padding: 60px; }
+
+#pricing-header h2 { color: #FFFFFF; padding: 0px; margin: 0px; line-height: 1.0; }
+
+#pricing { padding: 60px; }
+
+#pricing .plan { display: inline-block; background-color: #FFFFFF; box-sizing: border-box; width: 24%; margin: 0 4.5%; padding: 40px; border-radius: 20px; box-shadow: 3px 3px 6px rgba(200, 200, 200, 0.5); }
+
+#pricing .plan h3 { color: #3D2F40; text-align: center; margin-top: 0px; }
+
+#pricing .plan h3:nth-of-type(2) { margin-top: 40px; font-size: 18px; }
+
+#pricing .plan h3:nth-of-type(2) .price { font-size: 50px; }
+
+#pricing .plan li { text-align: left; }
+
+#pricing .plan a.button { display: block; }
+
+#subscribe { background-color: rgba(122, 95, 127, 0.7); text-align: center; padding: 40px; }
+
+#subscribe h3 { color: #FFFFFF; margin: 0px; line-height: 1.0; }
+
+#subscribe h4 { font-family: "Lato"; color: #F4BDFF; }
+
+#subscribe form input[type="email"] { background-color: #FFFFFF; box-sizing: border-box; border: transparent; border-radius: 20px; height: 40px; line-height: 40px; width: 250px; padding: 0px 15px; font-family: "Lato"; color: #3D2F40; font-weight: 500; font-size: 16px; font-style: italic; }
+
+#subscribe form input[type="submit"] { background-color: #7A5F7F; box-sizing: border-box; height: 40px; margin: 0px; width: 160px; border: transparent; border-radius: 20px; font-family: "Fredoka One"; color: #F4BDFF; font-size: 18px; font-weight: 100; }
+
+footer { padding: 20px 40px 40px 40px; }
+
+footer a { color: inherit; }
+
+footer h1 { font-size: 16px; margin: 0px; font-weight: 100; }
+
+footer h2 { font-size: 14px; font-weight: 100; }
+
+footer .left { width: 70%; float: left; }
+
+footer .right { width: 30%; float: right; }
+
+#pricing-large { padding: 60px; }
+
+#pricing-large h1 { text-align: center; }
+
+#pricing-large .plan { display: inline-block; background-color: #FFFFFF; box-sizing: border-box; width: 26%; margin: 0 3.5%; padding: 40px; border-radius: 20px; box-shadow: 3px 3px 6px rgba(200, 200, 200, 0.5); }
+
+#pricing-large .plan h3 { color: #3D2F40; text-align: center; margin-top: 0px; font-size: 40px; }
+
+#pricing-large .plan h3:nth-of-type(2) { margin-top: 40px; font-size: 18px; }
+
+#pricing-large .plan h3:nth-of-type(2) .price { font-size: 70px; }
+
+#pricing-large .plan li { text-align: left; }
+
+#pricing-large .plan a.button { display: block; }
+
+#faq { padding: 80px; }
+
+#faq p { font-weight: 500; margin-left: 20px; }
+
+.hidden { display: none; }
+
+/*# sourceMappingURL=styles.css.map */
