@@ -1,5 +1,5 @@
-var loginButton = document.querySelector('#header-login');
-var userIcon = document.querySelector('#header-user');
+var loginButton = document.querySelector("#header-login");
+var userIcon = document.querySelector("#header-user");
 
 //
 // UI Trigger login
@@ -36,16 +36,6 @@ function linkOrSignUp(provider) {
 //
 // UI Handle login
 //
-function onLogin(user) {
-    loginButton.style.display = 'hidden';
-    userIcon.style.display = 'inherit';
-}
-
-function onLogout() {
-    loginButton.style.display = 'inherit';
-    userIcon.style.display = 'hidden';
-}
-
 function handleAuthStateChange (user) {
     if (user) {
         onLogin(user);
@@ -54,16 +44,15 @@ function handleAuthStateChange (user) {
     }
 }
 
+function onLogin(user) {
+  loginButton.style.display = "hidden";
+  userIcon.style.display = "inherit";
+}
+
+function onLogout() {
+  loginButton.style.display = "inherit";
+  userIcon.style.display = "hidden";
+}
+
 firebase.auth().onAuthStateChanged(handleAuthStateChange);
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
-
-//
-// APIs
-//
-function getToken () {
-    var auth = firebase.auth();
-    if (auth.currentUser) {
-        return auth.currentUser.getIdToken();
-    }
-    return Promise.reject({ error: 'user.not-logged-in' });
-}
