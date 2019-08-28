@@ -45,13 +45,13 @@ function handleAuthStateChange (user) {
 }
 
 function onLogin(user) {
-  loginButton.style.display = "hidden";
-  userIcon.style.display = "inherit";
+  loginButton.style.display = "none";
+  userIcon.style.display = "initial";
 }
 
 function onLogout() {
-  loginButton.style.display = "inherit";
-  userIcon.style.display = "hidden";
+  loginButton.style.display = "initial";
+  userIcon.style.display = "none";
 }
 
 firebase.auth().onAuthStateChanged(handleAuthStateChange);
