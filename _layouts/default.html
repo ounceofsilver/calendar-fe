@@ -5,6 +5,11 @@
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/assets/css/styles.css">
 
+	<script src="https://js.stripe.com/v3"></script>
+	<script>
+	var stripe = Stripe('pk_test_rTV1akmLl11wacEDlhmaOv0800CIdRWVer');
+	</script>
+
 	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.4.1/firebase-auth.js"></script>
@@ -26,11 +31,12 @@
 	{% include nav.html %}
 	{{ content }}
 	{% include footer.html %}
+
 	<script src="https://kit.fontawesome.com/3956e76dfa.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/axios@0.19.0/dist/axios.min.js"></script>
 
 	<script src="/assets/js/auth.js"></script>
-	<script src="/assets/js/api.js"></script>
+	<script src="/assets/js/checkout.js"></script>
 </body>
 </html>
