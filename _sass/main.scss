@@ -3,6 +3,7 @@ $medium-purple: #7A5F7F;
 $light-purple: #F4BDFF;
 $dark-purple: #3D2F40;
 $purple-70: rgba($medium-purple, .7);
+$red: #AC4D4D;
 $background: #FCEFFF;
 $primary-font: 'Fredoka One';
 $secondary-font: 'Lato';
@@ -130,10 +131,12 @@ a.link {
 	padding: 0px 20px;
 	height: 40px;
 	line-height: 40px;
+	border: transparent;
 	border-radius: 40px;
 	font-size: 18px;
 	font-weight: 100;
-
+	cursor: hand;
+	cursor: pointer;
 }
 a {
 	text-decoration: none;
@@ -198,11 +201,14 @@ span.caret {
 		padding: 40px;
 		border-radius: 20px;
 		box-shadow: $box-shadow;
+
 		h3 {
 			color: $dark-purple;
 			text-align: center;
 			margin-top: 0px;
-			
+			small {
+				font-size: 28px;
+			}
 		}
 		h3:nth-of-type(2) {
 			margin-top: 40px;
@@ -217,6 +223,11 @@ span.caret {
 		}
 		a.button {
 			display: block;
+			margin: 0 auto;
+		}
+		.plan-details {
+			min-height: 140px;
+			max-height: fit-content;
 		}
 	}
 }
@@ -318,7 +329,10 @@ footer {
 			margin-top: 40px;
 			font-size: 18px;
 			.price {
-				font-size: 70px;
+				font-size: 60px;
+				small {
+					font-size: 32px;
+				}
 			}
 			
 		}
@@ -328,6 +342,10 @@ footer {
 		a.button {
 			display: block;
 		}
+	}
+	.plan-details {
+		min-height: 160px;
+		max-height: fit-content;
 	}
 }
 #faq {
@@ -341,4 +359,40 @@ footer {
 // settings
 .hidden {
 	display: none;
+}
+#settings-wrap {
+	padding: 80px;
+}
+#settings-nav {
+	display: block;
+	box-sizing: border-box;
+	background-color: $white;
+	min-height: 400px;
+	max-height: fit-content;
+	width: 20%;
+	border-radius: 20px;
+	padding: 40px;
+	text-align: center;
+	h3 {
+		color: $dark-purple;
+		cursor: hand;
+		cursor: pointer;
+	}
+	float: left;
+
+}
+.active-link {
+	color: $medium-purple;
+}
+#settings-content {
+	display: block;
+	box-sizing: border-box;
+	background-color: $white;
+	margin-left: 6%;
+	width: 74%;
+	min-height: 400px;
+	max-height: fit-content;
+	border-radius: 20px;
+	float: right;
+	padding: 40px;
 }
