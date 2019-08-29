@@ -5,8 +5,12 @@ var userIcon = document.querySelector("#header-user");
 // UI Trigger login
 //
 loginButton.addEventListener('click', function () {
-    googleLogin();
+    login();
 });
+
+function login() {
+    googleLogin();
+}
 
 function googleLogin() {
     var provider = new firebase.auth.GoogleAuthProvider();

@@ -7,18 +7,26 @@ var url = window.location.protocol + "//isitshabbat.net";
 
 function useCheckoutTrigger (plan) {
   return function () {
-    stripe
-      .redirectToCheckout({
-        items: [{ plan: plan, quantity: 1 }],
+    var auth = firebase.auth();
+    if (auth.currentUser) {
+      stripe
+        .redirectToCheckout({
+          items: [{ plan: plan, quantity: 1 }],
 
-        successUrl: url,
-        cancelUrl: url
-      })
-      .then(function(result) {
-        if (result.error) {
-          console.error("Failed to go to Stripe", result);
-        }
-      });
+          successUrl: url,
+          cancelUrl: url,
+          client_reference_id: firebase.auth().currentUser.uid
+        })
+        .then(function(result) {
+          if (result.error) {
+            console.error("Failed to go to Stripe", result);
+          }
+        });
+    } else {
+      // Request login first!
+      login();
+      // TODO(james): Then go to stripe!
+    }
   }
 }
 
